@@ -1,104 +1,21 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        /* NAVBAR */
-
-        .navbar {
-            width: 100%;
-            background: white;
-
-            padding: 15px 18px;
-
-            border-bottom: 1px solid #ccc;
-        }
-
-        /* TOPO */
-
-        .top-navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* LOGO */
-
-        .logo img {
-            width: 70px;
-            height: auto;
-        }
-
-        
-        /* ÍCONES */
-
-        .icons {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-
-            font-size: 22px;
-            color: #333;
-        }
-
-        .icons i {
-            cursor: pointer;
-        }
-
-        /* PESQUISA */
-
-        .search-box {
-            margin-top: 15px;
-
-            width: 100%;
-            height: 38px;
-
-            border: 2px solid #555;
-            border-radius: 30px;
-
-            display: flex;
-            align-items: center;
-
-            padding: 0 14px;
-
-            background: white;
-        }
-
-        .search-box i {
-            color: #555;
-            font-size: 14px;
-        }
-
-        .search-box input {
-            width: 100%;
-            border: none;
-            outline: none;
-
-            margin-left: 8px;
-
-            font-size: 14px;
-            background: transparent;
-        }
-    </style>
+    <title>Navbar Artifex</title>
 
 </head>
 
@@ -106,37 +23,72 @@
 
     <nav class="navbar">
 
-        <!-- TOPO -->
-        <div class="top-navbar">
+        <!-- LOGO -->
+        <div class="logo">
 
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="./img/img1.png" alt="Logo">
-            </div>
-
-            <!-- ÍCONES -->
-            <div class="icons">
-
-                <i class="fa-regular fa-user"></i>
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
+            <!-- Troque pelo nome da sua imagem -->
+            <img src="./img/logo.png" alt="Logo Artifex">
 
         </div>
 
-        <!-- PESQUISA -->
-        <div class="search-box">
+        <!-- MENU -->
+        <ul class="menu">
 
+            <li><a href="#">Lançamentos</a></li>
+
+            <li><a href="#">Categorias</a></li>
+
+            <li><a href="#">Ultilitários</a></li>
+
+            <li><a href="#">Sobre</a></li>
+
+            <li><a href="#">Contato</a></li>
+
+            <li><a href="#">Ao vivo</a></li>
+
+        </ul>
+
+        <!-- ÍCONES -->
+        <div class="icons">
+
+            <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
 
-            <input type="text" placeholder="search">
+            <div class="cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
 
         </div>
 
     </nav>
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input type="text" placeholder="search">
+
+    </div>
+
+    <div class="dropdown">
+
+        <a href="#">Categorias</a>
+
+        <div class="dropdown-content">
+
+            <a href="#">Cyberpunk</a>
+
+            <a href="#">Futurista</a>
+
+            <a href="#">Velho Oeste</a>
+
+            <a href="#">Medieval</a>
+
+        </div>
+
+    </div>
 
 </body>
 
